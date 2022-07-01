@@ -10,7 +10,7 @@ import { PokedevService } from './services/pokedev.service';
 export class AppComponent implements OnInit {
   title = 'pokedex';
 
-  pokemones: any = [];
+
   pokemon: any = {};
 
   /**
@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
   constructor(private readonly pokedevSvc: PokedevService) { }
 
   ngOnInit(): void {
-    this.pokedevSvc.getPokemonsList()
-      .subscribe(pokemones => this.pokemones = pokemones.results);
+   
 
       this.pokedevSvc.getPokememonByIdOrName(1)
       .subscribe(pokemon => this.pokemon = pokemon);

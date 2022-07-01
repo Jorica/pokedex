@@ -10,10 +10,7 @@ export class CardPokemonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.data = {
-      nombre: "POKEMON",
-      url:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-    }
+
   }
 
 }

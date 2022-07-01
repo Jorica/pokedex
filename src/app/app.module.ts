@@ -19,12 +19,8 @@ import {
   imports: [
     AppRoutingModule,
     BrowserModule,
-<<<<<<< Updated upstream
-    HttpClientModule
-=======
-    AppRoutingModule,
+    HttpClientModule,
     DxButtonModule
->>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
