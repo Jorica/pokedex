@@ -12,14 +12,8 @@ export class ListPokemonComponent implements OnInit {
   constructor(private readonly pokedevSvc: PokedevService) { }
 
   ngOnInit(): void {
-
-    this.pokedevSvc.getPokemonsList()
-    .subscribe(pokemones => {
-      this.pokemones = pokemones.results;
-      console.log(this.pokemones);
-      });
-
-
+    this.pokemones = this.pokedevSvc.pokemonsList;
+    console.log(this.pokemones)
   }
 
 }
