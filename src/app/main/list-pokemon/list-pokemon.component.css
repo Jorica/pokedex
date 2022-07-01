@@ -1,0 +1,7 @@
+.contentCard{
+    display: grid;
+}
+
+.item{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

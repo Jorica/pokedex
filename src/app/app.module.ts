@@ -8,7 +8,7 @@ import { CardPokemonComponent } from './main/card-pokemon/card-pokemon.component
 import { ListPokemonComponent } from './main/list-pokemon/list-pokemon.component';
 import { 
   DxButtonModule,
-
+  DxFormModule
  } from 'devextreme-angular';
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import {
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    DxButtonModule
+    DxButtonModule,
+    DxFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

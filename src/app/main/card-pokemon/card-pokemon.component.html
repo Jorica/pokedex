@@ -1,7 +1,11 @@
 <div class="card">
+   
+    <div class="divImg">
+        <img class="img" [src]="data.image" [alt]="data.name">
+    </div>
+    <span>N.°{{data.id}}</span>
     <span class="titulo">{{data.name}}</span>
-    <img [src]="data.url">
-    <dx-button
-    text="Click me!">
-</dx-button>
+   <!--  <dx-button
+    text="Ver mas">
+ </dx-button> -->
 </div>

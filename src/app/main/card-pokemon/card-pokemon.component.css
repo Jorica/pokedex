@@ -1,17 +1,25 @@
 .card{
-    width: 100%;
+    width: auto;
     height: auto;
-    box-shadow: 1px 1px 50  px black;
     display: grid;
     border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
 }
 
 .titulo{
     grid-template-rows: 1fr;
-    text-align: center;
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.img{
+.divImg{
     text-align: center;
     grid-template-rows: 1fr;
+    background-color: #f2f2f2;
+}
+.img{
+    width: 200px;
+    height: 200px;
 }
