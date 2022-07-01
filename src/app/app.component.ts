@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title = 'pokedex';
 
   pokemones: any = [];
+  pokemon: any = {};
 
   /**
    *
@@ -20,5 +21,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.pokedevSvc.getPokemonsList()
       .subscribe(pokemones => this.pokemones = pokemones.results);
+
+      this.pokedevSvc.getPokememonByIdOrName(1)
+      .subscribe(pokemon => this.pokemon = pokemon);
   }
 }
