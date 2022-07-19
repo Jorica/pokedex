@@ -1,11 +1,12 @@
 <div class="card">
-   
-    <div class="divImg">
-        <img class="img" [src]="data.image" [alt]="data.name">
-    </div>
-    <span>N.°{{data.id}}</span>
-    <span class="titulo">{{data.name}}</span>
-   <!--  <dx-button
-    text="Ver mas">
- </dx-button> -->
+  <div class="divImg">
+    <img class="img"
+        [src]="data.image"
+        [alt]="data.name">
+  </div>
+  <span>N.°{{data.id}}</span>
+  <span class="titulo">{{data.name | titlecase}}</span>
+  <!--  <dx-button
+                                            text="Ver mas">
+                                         </dx-button> -->
 </div>

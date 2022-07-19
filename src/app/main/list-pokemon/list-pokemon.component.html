@@ -1,9 +1,10 @@
 <dx-form>
-    <dxi-item dataField="Buscar"></dxi-item>
+  <dxi-item dataField="Buscar"></dxi-item>
 </dx-form>
 
-<div class="contenCard">
-    <app-card-pokemon class="item" [data] = "item" *ngFor="let item of pokemones"></app-card-pokemon>
-</div> 
-
-
+<div class="content-card">
+  <app-card-pokemon class="item"
+                    [data]="item"
+                    *ngFor="let item of pokemones">
+  </app-card-pokemon>
+</div>
