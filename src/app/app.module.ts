@@ -10,6 +10,9 @@ import {
   DxButtonModule,
   DxFormModule
  } from 'devextreme-angular';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,9 @@ import {
     BrowserModule,
     HttpClientModule,
     DxButtonModule,
-    DxFormModule
+    DxFormModule,
+    StoreModule.forRoot({}, {}),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
